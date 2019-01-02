@@ -1,0 +1,1 @@
+gst-launch-1.0 -v videoconvert ! videoscale ! video/x-raw,format=I420,width=640,height=480,framerate=15/1 ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=5000
